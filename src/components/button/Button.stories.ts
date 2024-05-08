@@ -23,10 +23,3 @@ export const Secondary: Story = {
     variant: "secondary",
   },
 };
-
-export const Tertiary: Story = {
-  args: {
-    text: "Button",
-    variant: "tertiary",
-  },
-};
