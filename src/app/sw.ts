@@ -9,8 +9,8 @@ declare const self: ServiceWorkerGlobalScopeEventMap & {
 
 installSerwist({
   precacheEntries: self.__SW_MANIFEST,
-  skipWaiting: true,
-  clientsClaim: true,
-  navigationPreload: true,
+  skipWaiting: false,
+  clientsClaim: false,
+  navigationPreload: false,
   runtimeCaching: defaultCache,
 });

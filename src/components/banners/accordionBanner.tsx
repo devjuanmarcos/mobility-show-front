@@ -85,9 +85,9 @@ function AccordionPanel({ children }: { children: ReactNode }) {
 
 export default function AccordionBanner() {
   return (
-    <section className="w-full  mx-0 my-auto text-center ">
+    <section className="w-full  mx-0 my-auto text-center " id="#isencao">
       <Accordion>
-        <AccordionItem className="bg-[#022238] hover:bg-[#001E33] active:bg-[#001E33]">
+        <AccordionItem className="bg-brand-200 hover:bg-brand-300 active:bg-brand-300">
           <AccordionHeader>
             <div className="flex justify-between gap-[5.875rem] items-center select-none">
               <div className="flex justify-between w-full items-center gap-[1.5rem] max-md:flex-col">
@@ -138,7 +138,7 @@ export default function AccordionBanner() {
           </AccordionPanel>
         </AccordionItem>
 
-        <AccordionItem className="bg-[#333333]/50 backdrop-blur-lg -mt-[4.375rem]  ">
+        <AccordionItem className="bg-card-black-half backdrop-blur-lg -mt-[4.375rem]  ">
           <AccordionHeader>
             <div className="flex justify-between gap-[5.875rem] items-center select-none">
               <div className="flex justify-between w-full items-center gap-[1.5rem] max-md:flex-col">

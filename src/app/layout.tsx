@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { HtmlFontSizeProvider } from "@/context/HtmlFontSizeContext";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider, useTheme } from "next-themes";
 import { BarTools } from "@/components/barra-acessibilidade/BarTools";
 import { WindowSizeProvider } from "@/context/WindowSizeContext";
-import { Epilogue, Lato } from "next/font/google";
+import { Epilogue, Lato, Montserrat } from "next/font/google";
+import { VLibrasUrlProvider } from "@/context/VLibrasUrlContext";
+import { IdiomaProvider } from "@/context/IdiomaContext";
+import { HeaderAccessibilityMenu } from "@/components/barra-acessibilidade/HeaderAccessibilityMenu";
+import { Header } from "@/components/barra-acessibilidade/Header";
 
 const APP_NAME = "Mobility & Show";
 const APP_DEFAULT_TITLE = "Mobility & Show";
@@ -53,6 +57,13 @@ const epilogue = Epilogue({
   variable: "--font-epilogue",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 const lato = Lato({
   subsets: ["latin"],
   variable: "--font-lato",
@@ -61,20 +72,28 @@ const lato = Lato({
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      className="transition-all h-full w-full scrollbar-thin scrollbar-webkit "
-      suppressHydrationWarning
-      lang="pt-BR"
-    >
-      <body className={`${epilogue.variable} ${lato.variable}`}>
-        <WindowSizeProvider>
-          <HtmlFontSizeProvider>
-            <ThemeProvider defaultTheme="dark" enableSystem={false}>
-              <main className="pt-[9rem] bg-background-luz bg-cover h-auto">{children}</main>
-            </ThemeProvider>
-          </HtmlFontSizeProvider>
-        </WindowSizeProvider>
-      </body>
-    </html>
+    <IdiomaProvider>
+      <WindowSizeProvider>
+        <VLibrasUrlProvider>
+          <html
+            className="transition-all h-full w-full scrollbar-thin scrollbar-webkit "
+            suppressHydrationWarning
+            lang="pt-BR"
+          >
+            <body className={`${epilogue.variable} ${lato.variable} ${montserrat.variable}`}>
+              <ThemeProvider defaultTheme="dark" enableSystem={false}>
+                <HtmlFontSizeProvider>
+                  <header className="fixed top-0 z-50 w-full flex flex-col  ">
+                    <HeaderAccessibilityMenu />
+                    <Header />
+                  </header>
+                  <main className="pt-[9rem] bg-background-luz  bg-cover h-auto">{children}</main>
+                </HtmlFontSizeProvider>
+              </ThemeProvider>
+            </body>
+          </html>
+        </VLibrasUrlProvider>
+      </WindowSizeProvider>
+    </IdiomaProvider>
   );
 }

@@ -22,8 +22,8 @@ export const ImageWithArrowTitle: React.FC<ImageWithArrowTitleType> = ({ image, 
       />
       <div className="flex justify-between absolute bottom-0 px-6 pb-8 items-end w-full z-20  transition-all duration-500">
         <div className="flex flex-col text-start title-card">
-          <span className="">{title1}</span>
-          <span className="w-max">{title2}</span>
+          <span className="text-white">{title1}</span>
+          <span className="w-max text-white">{title2}</span>
         </div>
         <IoIosArrowDroprightCircle
           color="#fff"

@@ -52,16 +52,17 @@ export const MainBanner = () => {
 
       <Countdown targetDate={"2024-12-31T23:59:59"} />
 
-      <div className=" bg-[#333333]/20 backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[1.126rem] rounded-2xl">
+      <div className=" bg-card-black backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[1.126rem] rounded-2xl">
         <SimpleBanner />
       </div>
 
       <PartnersBanner />
 
-      <div className=" bg-[#333333]/20 backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[3.75rem] rounded-2xl w-full">
+      <div className=" bg-card-black  backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[3.75rem] rounded-2xl w-full">
         <VideoBanner />
       </div>
 
+      <div id="isencao" />
       <AccordionBanner />
 
       <OneImageBanner />

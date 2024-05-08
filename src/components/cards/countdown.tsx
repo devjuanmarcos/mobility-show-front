@@ -53,7 +53,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate = undefined }) 
       <span className="title-card">Contagem Regressiva para o Mobility & Show</span>
 
       <div className="flex gap-6 max-md:gap-2 mt-5 w-full h-[6.125rem] max-w-[42.5625rem] items-center">
-        <div className="h-full w-[7.875rem] bg-[#333333]/20 backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
+        <div className="h-full w-[7.875rem] bg-card-black  backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
           <span className="font-epilogue font-medium text-[2rem] max-md:text-lg -mb-2">
             {timeLeft.days.toString().padStart(2, "0")}
           </span>
@@ -62,7 +62,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate = undefined }) 
 
         <span className="title-card max-sm:hidden">:</span>
 
-        <div className="h-full w-[7.875rem] bg-[#333333]/20 backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
+        <div className="h-full w-[7.875rem] bg-card-black  backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
           <span className="font-epilogue font-medium text-[2rem] max-md:text-lg -mb-2">
             {timeLeft.hours.toString().padStart(2, "0")}
           </span>
@@ -71,7 +71,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate = undefined }) 
 
         <span className="title-card max-sm:hidden">:</span>
 
-        <div className="h-full w-[7.875rem] bg-[#333333]/20 backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
+        <div className="h-full w-[7.875rem] bg-card-black  backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
           <span className="font-epilogue font-medium text-[2rem] max-md:text-lg -mb-2">
             {timeLeft.minutes.toString().padStart(2, "0")}
           </span>
@@ -80,7 +80,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate = undefined }) 
 
         <span className="title-card max-sm:hidden">:</span>
 
-        <div className="h-full w-[7.875rem] bg-[#333333]/20 backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
+        <div className="h-full w-[7.875rem] bg-card-black  backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
           <span className="font-epilogue font-medium text-[2rem] max-md:text-lg -mb-2">
             {timeLeft.seconds.toString().padStart(2, "0")}
           </span>

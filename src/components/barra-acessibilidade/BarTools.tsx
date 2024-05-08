@@ -24,7 +24,7 @@ export function BarTools() {
 
   return (
     <div className="bg-var-accessibility-header-bg min-h-[41px] flex justify-center md:justify-between px-6 gap-4 fixed w-full z-50 max-md:flex-wrap max-md:flex-col items-center py-2">
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-5 ">
         <IconsTools theme={theme} onClick={() => setTheme("dark")} path={mdiMoonWaningCrescent} />
         <IconsTools theme={theme} onClick={() => setTheme("light")} path={mdiWhiteBalanceSunny} />
         {/* <IconsTools theme={theme} onClick={() => setTheme("contrast")} path={mdiContrastCircle} />

@@ -1,7 +1,8 @@
 import type { Config } from "tailwindcss";
+import { PluginUtils } from "tailwindcss/types/config";
 
 const config: Config = {
-  darkMode: "media",
+  darkMode: ["variant", "&:not(.light *)"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,6 +18,7 @@ const config: Config = {
         lato: ["var(--font-lato)"],
         sarabun: ["var(--font-sarabun)"],
         epilogue: ["var(--font-epilogue)"],
+        montserrat: ["var(--font-montserrat)"],
       },
       screens: {
         "2sm": "481px",
@@ -50,6 +52,7 @@ const config: Config = {
         },
         card: {
           black: "rgb(var(--var-card-background))",
+          "black-half": "rgb(var(--var-card-background-half))",
         },
         text: {
           primary: "rgb(var(--var-text-primary))",
@@ -58,20 +61,22 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "background-luz": "url('/background/pontos de luz.png')",
+        "background-luz": "var(--background-luz)",
       },
       animation: {
         scroll: "scroll 40s linear infinite",
       },
-
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(calc(-250px * 14))" },
         },
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ["dark"],
     },
   },
   plugins: [

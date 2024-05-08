@@ -15,8 +15,8 @@ export const OneImageBanner = () => {
       <div className="absolute max-md:relative max-md:-mt-20 bottom-0 w-full -mb-[.0625rem]">
         <div className="w-full h-full  absolute backdrop-blur-sm bg-[#082F47]/60  rounded-t-[3.5rem] rounded-b-3xl z-10 "></div>
         <div className="px-[4.5625rem] max-md:px-6 gap-10 py-6 z-20 relative flex max-md:flex-col justify-between w-full items-center">
-          <span className="title-card">Feira Única: Tudo ao seu Alcance!</span>
-          <span className="w-full max-w-[31.5rem] max-md:max-w-full max-md:text-center banner-card text-start">
+          <span className="title-card text-white">Feira Única: Tudo ao seu Alcance!</span>
+          <span className="w-full max-w-[31.5rem] max-md:max-w-full max-md:text-center banner-card text-start text-white">
             Descubra uma variedade incrível de equipamentos, serviços, produtos e carros em um único local. Aproveite as
             condições especiais e benefícios exclusivos.
           </span>
