@@ -65,7 +65,7 @@ export const HeaderAccessibilityMenu = ({ productId }: { productId?: string }) =
         <button className="" onClick={ativarVLibras} aria-label="Abrir ferramenta de libras">
           <div className="relative w-[1.08rem] h-[1.08rem]">
             <Image
-              src={`/icons/libras-icon-${theme === "dark" ? "claro" : "escuro"}.svg`}
+              src={`/icons/libras-icon-${theme === "light" ? "escuro" : "claro"}.svg`}
               width={25}
               height={25}
               alt="Ícone do símbolo da Linguagem Brasileira de Sinais"

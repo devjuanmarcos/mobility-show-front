@@ -53,7 +53,7 @@ export const Header = () => {
           width={183}
           height={56}
           quality={100}
-          src={theme == "dark" ? "/logos/mobility-show-logo.png" : "/logos/mobility-show-logo-escuro.png"}
+          src={theme == "light" ? "/logos/mobility-show-logo-escuro.png" : "/logos/mobility-show-logo.png"}
           alt="Logo da Mobility & Show"
         />
       </div>

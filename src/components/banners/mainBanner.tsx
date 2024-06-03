@@ -25,32 +25,20 @@ export const MainBanner = () => {
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 justify-center mb-1 max">
         <ImageWithArrowTitle
-          image="/root-images-main-cards/FeiraSP.png"
-          title1="Feira de"
-          title2="São Paulo"
-          link="acervo/SP"
+          image="/acervo/futebol-mobilityshow2018-por-DiogoFrança-010.JPG"
+          title1="Experiência emocionante"
+          link="/acervo"
         />
         <ImageWithArrowTitle
-          image="/root-images-main-cards/FeiraRJ.png"
-          title1="Feira do"
-          title2="Rio de Janeiro"
-          link="acervo/RJ"
+          image="/acervo/3bf93deb-5490-44df-acd6-d27db09d4e9f.jpg"
+          title1="Evento memorável"
+          link="/acervo"
         />
-        <ImageWithArrowTitle
-          image="/root-images-main-cards/FeiraREC.png"
-          title1="Feira de"
-          title2="Recife"
-          link="acervo/REC"
-        />
-        <ImageWithArrowTitle
-          image="/root-images-main-cards/FeiraRP.png"
-          title1="Feira de"
-          title2="Ribeirão Preto"
-          link="acervo/RMRP"
-        />
+        <ImageWithArrowTitle image="/acervo/IMG_0516.JPG" title1="Encontro apaixonante" link="/acervo" />
+        <ImageWithArrowTitle image="/acervo/IMG_0512.JPG" title1="Exposição empolgante" link="/acervo" />
       </div>
 
-      <Countdown targetDate={"2024-12-31T23:59:59"} />
+      <Countdown targetDate={"2024-09-12T23:59:59"} />
 
       <div className=" bg-card-black backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[1.126rem] rounded-2xl">
         <SimpleBanner />

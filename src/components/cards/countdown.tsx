@@ -51,6 +51,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate = undefined }) 
     <div className="flex flex-col gap-1 justify-center items-center">
       <span className="top-title">TEMPO</span>
       <span className="title-card">Contagem Regressiva para o Mobility & Show</span>
+      <span className="title-card">13/09/2024</span>
 
       <div className="flex gap-6 max-md:gap-2 mt-5 w-full h-[6.125rem] max-w-[42.5625rem] items-center">
         <div className="h-full w-[7.875rem] bg-card-black  backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
