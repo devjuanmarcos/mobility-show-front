@@ -177,7 +177,7 @@ const AcervoImagens = [
 export default async function AcervoPage() {
   return (
     <section className="py-10 flex flex-col">
-      <span className="title-card text-center w-full">Fotografias da edição 2023 da PICK UP SHOW</span>
+      <span className="title-card text-center w-full">Fotografias das edições anteriores da Mobility & Show</span>
       <span className="title-banner text-center w-full">Clique na imagem para expandir</span>
       <AcervoMosaicBanner images={AcervoImagens} />
     </section>
