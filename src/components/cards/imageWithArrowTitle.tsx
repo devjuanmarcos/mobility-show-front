@@ -10,7 +10,7 @@ export const ImageWithArrowTitle: React.FC<ImageWithArrowTitleType> = ({ image, 
   return (
     <div
       onClick={() => router.push(link!)}
-      className="w-full h-full max-w-[16.875rem] max-h-[16.875rem] aspect-square relative rounded-lg overflow-hidden cursor-pointer transition-all duration-500 group"
+      className="w-[16.875rem] h-[16.875rem] aspect-square relative rounded-lg overflow-hidden cursor-pointer transition-all duration-500 group"
     >
       <div className="absolute inset-0 bg-gradient-to-tr from-black  transition-all duration-500  group-hover:bg-brand-600 group-hover:opacity-70"></div>
       <Image
