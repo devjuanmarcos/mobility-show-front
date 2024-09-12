@@ -12,6 +12,7 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const { theme, setTheme } = useTheme();
   const router = useRouter();
+  const [isMounted, setIsMounted] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +29,10 @@ export const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  if (!isMounted) {
+    return;
+  }
 
   return (
     <section
