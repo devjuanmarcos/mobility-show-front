@@ -6,10 +6,12 @@ import React from "react";
 import { FiUser } from "react-icons/fi";
 import { Button } from "../button/Button";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -55,12 +57,19 @@ export const Header = () => {
           quality={100}
           src={theme == "light" ? "/logos/mobility-show-logo-escuro.png" : "/logos/mobility-show-logo.png"}
           alt="Logo da Mobility & Show"
+          onClick={() => (window.location.href = "/")}
+          className="cursor-pointer"
         />
       </div>
 
       <div className="flex gap-6 justify-end max-sm:hidden">
-        <Button variant="outline" text="Entrar em contato" width="full" />
-        <Button variant="normal" text="Inscreva-se" width="full" />
+        <Link
+          href={"/contato"}
+          className="transition-colors duration-300 button  bg-none hover:bg-brand-500 border border-brand-400 p-3 rounded-2xl text-center text-brand-400 hover:text-text-button "
+        >
+          Entrar em contato
+        </Link>
+        {/* <Button variant="normal" text="Inscreva-se" width="full" /> */}
       </div>
     </section>
   );

@@ -17,6 +17,7 @@
     "@serwist/precaching": "^8.4.4",
     "@serwist/sw": "^8.4.4",
     "axios": "^1.6.7",
+    "biomob-next-boilerplate": "file:",
     "framer-motion": "^11.1.9",
     "msw": "1.3.2",
     "next": "14.1.0",
