@@ -20,7 +20,7 @@ export const MainBanner = () => {
           Uma Exposição de Automóveis, Veículos e Adaptações, Equipamentos e Serviços para Pessoas com Deficiência e
           Familiares, Idosos e Pessoas com Mobilidade Reduzida e Diversidade Assistiva.
         </p>
-        <Button variant="normal" text="Inscreva-se" width="fit" />
+        {/* <Button variant="normal" text="Inscreva-se" width="fit" /> */}
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 justify-center mb-1 max">
