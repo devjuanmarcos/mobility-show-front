@@ -38,7 +38,7 @@ export const MainBanner = () => {
         <ImageWithArrowTitle image="/acervo/IMG_0512.JPG" title1="Exposição empolgante" link="/acervo" />
       </div>
 
-      <Countdown targetDate={"2024-12-06T23:59:59"} />
+      {/* <Countdown targetDate={"2024-12-06T23:59:59"} /> */}
 
       <div className=" bg-card-black backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[1.126rem] rounded-2xl">
         <SimpleBanner />
