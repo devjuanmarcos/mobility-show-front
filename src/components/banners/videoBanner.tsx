@@ -2,8 +2,8 @@ import { TopTitle } from "../ui/TitleWithTopTitle";
 
 export const VideoBanner = () => {
   return (
-    <div className="flex max-lg:flex-col gap-5 text-start justify-between items-center ">
-      <div className="grid gap-4 w-full max-w-[20.625rem] max-lg:max-w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 text-start justify-between items-center ">
+      <div className="grid gap-4 w-full ">
         <TopTitle topTitle="Explore a MOBILITY & SHOW" title="Transformando Vidas com Mobilidade e Inclusão!" />
         <p className="banner-card">
           {`A MOBILITY & SHOW é uma exposição de automóveis, veículos adaptados, equipamentos e serviços para pessoas com

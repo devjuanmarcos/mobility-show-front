@@ -24,18 +24,18 @@ export const MainBanner = () => {
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 justify-center mb-1 max">
-        <ImageWithArrowTitle
-          image="/acervo/sp/futebol-mobilityshow2018-por-DiogoFrança-010.JPG"
-          title1="Mobility & Show São Paulo"
-          link="/acervo/sp"
-        />
+        <ImageWithArrowTitle image="/acervo/sp/IMG_4932.JPG" title1="Mobility & Show São Paulo" link="/acervo/sp" />
         <ImageWithArrowTitle
           image="/acervo/rj/IMG_1787.jpg"
           title1="Mobility & Show Rio de Janeiro"
           link="/acervo/rj"
         />
         <ImageWithArrowTitle image="/acervo/go/IMG_6463.JPG" title1="Mobility & Show Goiás" link="/acervo/go" />
-        <ImageWithArrowTitle image="/acervo/sp/IMG_0512.JPG" title1="Mobility & Show São Paulo" link="/acervo/sp" />
+        <ImageWithArrowTitle
+          image="/acervo/sp/de2801cf-74bc-4dde-8436-b343b659fd79.jpg"
+          title1="Mobility & Show São Paulo"
+          link="/acervo/sp"
+        />
       </div>
 
       {/* <Countdown targetDate={"2024-12-06T23:59:59"} /> */}
