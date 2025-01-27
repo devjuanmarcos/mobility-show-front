@@ -29,6 +29,12 @@ export default withSerwist({
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "www.revistareacao.com.br",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   experimental: {
