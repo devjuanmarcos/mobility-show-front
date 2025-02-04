@@ -13,6 +13,7 @@ export const AcervoMosaicBanner = ({ images }: { images: any[] }) => {
       setSelectedImage(image);
     }
   };
+
   const handleClose = () => {
     setSelectedImage(null);
   };

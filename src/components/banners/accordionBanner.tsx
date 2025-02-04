@@ -110,28 +110,28 @@ export default function AccordionBanner() {
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4925.JPG"}
                 alt={`Fotografia`}
               />
               <Image
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4924.JPG"}
                 alt={`Fotografia`}
               />
               <Image
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4910.JPG"}
                 alt={`Fotografia`}
               />
               <Image
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4908.JPG"}
                 alt={`Fotografia`}
               />
             </div>
@@ -159,28 +159,28 @@ export default function AccordionBanner() {
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4892.JPG"}
                 alt={`Fotografia`}
               />
               <Image
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4894.JPG"}
                 alt={`Fotografia`}
               />
               <Image
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4921.JPG"}
                 alt={`Fotografia`}
               />
               <Image
                 className="w-full h-full object-cover"
                 width={300}
                 height={300}
-                src={"/root-images-main-cards/FeiraSP.png"}
+                src={"/acervo/sp/IMG_4927.JPG"}
                 alt={`Fotografia`}
               />
             </div>

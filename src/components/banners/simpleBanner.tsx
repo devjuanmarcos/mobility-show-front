@@ -7,7 +7,7 @@ export const SimpleBanner = () => {
   return (
     <div className="flex flex-col gap-8 text-start ">
       <TopTitle
-        topTitle="MOBILITY SHOW 2024"
+        topTitle="MOBILITY SHOW 2025"
         title="Você encontrará um universo de possibilidades para a inclusão e acessibilidade!"
       />
       <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 justify-center items-center w-full">

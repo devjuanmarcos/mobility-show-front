@@ -4,6 +4,7 @@ import { Button } from "../button/Button";
 import { Countdown } from "../cards/countdown";
 import { ImageWithArrowTitle } from "../cards/imageWithArrowTitle";
 import AccordionBanner from "./accordionBanner";
+import { ImageBanner } from "./imageBanner";
 import { OneImageBanner } from "./oneImageBanner";
 import { PartnersBanner } from "./partnersBanner";
 import { SimpleBanner } from "./simpleBanner";
@@ -26,24 +27,56 @@ export const MainBanner = () => {
       <Countdown targetDate="2025-05-09T00:00:00-03:00" />
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 justify-center mb-1 max">
+        <ImageWithArrowTitle image="/acervo/sp/IMG_4932.JPG" title1="Mobility & Show São Paulo" link="/acervo/sp" />
         <ImageWithArrowTitle
-          image="/acervo/futebol-mobilityshow2018-por-DiogoFrança-010.JPG"
-          title1="Experiência emocionante"
-          link="/acervo"
+          image="/acervo/rj/IMG_1787.jpg"
+          title1="Mobility & Show Rio de Janeiro"
+          link="/acervo/rj"
         />
+        <ImageWithArrowTitle image="/acervo/go/IMG_6463.JPG" title1="Mobility & Show Goiás" link="/acervo/go" />
         <ImageWithArrowTitle
-          image="/acervo/3bf93deb-5490-44df-acd6-d27db09d4e9f.jpg"
-          title1="Evento memorável"
-          link="/acervo"
+          image="/acervo/sp/de2801cf-74bc-4dde-8436-b343b659fd79.jpg"
+          title1="Mobility & Show São Paulo"
+          link="/acervo/sp"
         />
-        <ImageWithArrowTitle image="/acervo/IMG_0516.JPG" title1="Encontro apaixonante" link="/acervo" />
-        <ImageWithArrowTitle image="/acervo/IMG_0512.JPG" title1="Exposição empolgante" link="/acervo" />
       </div>
 
 
       <div className=" bg-card-black backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[1.126rem] rounded-2xl">
         <SimpleBanner />
       </div>
+
+      <div className=" bg-card-black  backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[3.75rem] rounded-2xl w-full">
+        <ImageBanner
+          src="https://www.revistareacao.com.br/_next/image?url=https%3A%2F%2Fbiomobtinastorage.blob.core.windows.net%2Frevista-reacao%2Fcarros%252F24%252Fimage%252F7d92868c-3c1a-4078-a07e-4eec2de75fed.png&w=640&q=100"
+          title="TOYOTA COROLLA"
+          topTitle="PRÊMIO CARRO DO ANO"
+          paragraph="Eleito o melhor carro para Pessoas com Deficiência de 2024 na categoria SEDAN."
+        />
+      </div>
+
+      <ImageBanner
+        src="https://www.revistareacao.com.br/_next/image?url=https%3A%2F%2Fbiomobtinastorage.blob.core.windows.net%2Frevista-reacao%2Fcarros%252F13%252Fimage%252Fe3d2b554-10d1-4a12-b402-6bcae948e911.png&w=640&q=100"
+        title="NISSAN KICKS"
+        topTitle="PRÊMIO CARRO DO ANO"
+        paragraph="Eleito o melhor carro para Pessoas com Deficiência de 2024 na categoria SUV."
+      />
+
+      <div className=" bg-card-black  backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[3.75rem] rounded-2xl w-full">
+        <ImageBanner
+          src="https://www.revistareacao.com.br/_next/image?url=https%3A%2F%2Fbiomobtinastorage.blob.core.windows.net%2Frevista-reacao%2Fcarros%252F32%252Fimage%252Fc4463445-eeaa-42f5-9f1c-f10a58df5890.png&w=640&q=100"
+          title="HONDA CITY HATCH"
+          topTitle="PRÊMIO CARRO DO ANO"
+          paragraph="Eleito o melhor carro para Pessoas com Deficiência de 2024 na categoria COMPACTO."
+        />
+      </div>
+
+      <ImageBanner
+        src="https://www.revistareacao.com.br/_next/image?url=https%3A%2F%2Fbiomobtinastorage.blob.core.windows.net%2Frevista-reacao%2Fcarros%252F1%252Fimage%252Fc2fa0afd-4656-4e43-a755-dcfb89facffc.png&w=640&q=100"
+        title="BYD DOLPHIN"
+        topTitle="PRÊMIO CARRO DO ANO"
+        paragraph="Eleito o melhor carro para Pessoas com Deficiência de 2024 na categoria ELÉTRICO."
+      />
 
       <PartnersBanner />
 
