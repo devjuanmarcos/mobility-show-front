@@ -17,7 +17,7 @@ export const MainBanner = () => {
   }, []);
 
   return (
-    <div className="flex flex-col text-center justify-center items-center gap-10 py-20">
+    <div className="flex flex-col text-center justify-center items-center gap-10 py-6">
       <div className="flex flex-col  w-full max-w-[57.5rem] gap-2 justify-center items-center">
         <span className="title-h1">
           A Mobility & Show: Mais que uma feira, um <span className="title-h1-bold">movimento pela inclusão!</span>
@@ -28,6 +28,8 @@ export const MainBanner = () => {
         </p>
         {/* <Button variant="normal" text="Inscreva-se" width="fit" /> */}
       </div>
+
+      <Countdown targetDate="2025-05-09T00:00:00-03:00" />
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 justify-center mb-1 max">
         <ImageWithArrowTitle image="/acervo/sp/IMG_4932.JPG" title1="Mobility & Show São Paulo" link="/acervo/sp" />
@@ -44,7 +46,6 @@ export const MainBanner = () => {
         />
       </div>
 
-      {/* <Countdown targetDate={"2024-12-06T23:59:59"} /> */}
 
       <div className=" bg-card-black backdrop-blur-lg px-[4rem] max-md:px-4 py-[4rem] mt-[1.126rem] rounded-2xl">
         <SimpleBanner />

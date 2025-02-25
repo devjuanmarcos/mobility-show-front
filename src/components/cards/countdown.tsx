@@ -50,11 +50,10 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate = undefined }) 
   return (
     <div className="flex flex-col gap-1 justify-center items-center">
       <span className="top-title">TEMPO</span>
-      <span className="title-card">Contagem Regressiva para o Mobility & Show</span>
-      <span className="title-card">Primeiro semestre de 2025</span>
-      <span className="title-card">Devido ao cenário atual das isenções — com o baixo valor do teto para a compra de veículos 0KM por pessoas com deficiência (PcD), a baixa demanda no segmento e as incertezas quanto ao futuro do mercado diante da reforma tributária — optamos por adiar a realização da Mobility & Show 2024. Para preservar o bem-estar de todo o setor em um momento tão delicado, o evento será transferido para o primeiro semestre de 2025, em São Paulo/SP.</span>
-
-      {/* <div className="flex gap-6 max-md:gap-2 mt-5 w-full h-[6.125rem] max-w-[42.5625rem] items-center">
+      <span className="title-card">Contagem Regressiva para a Mobility & Show </span>
+      <span className="title-card">09 a 11 de maio de 2025 na Transaméria Expo Center - São Paulo</span>
+    
+      <div className="flex gap-6 max-md:gap-2 mt-5 w-full h-[6.125rem] max-w-[42.5625rem] items-center">
         <div className="h-full w-[7.875rem] bg-card-black  backdrop-blur-lg max-md:w-full flex flex-col items-center justify-center  rounded-lg">
           <span className="font-epilogue font-medium text-[2rem] max-md:text-lg -mb-2">
             {timeLeft.days.toString().padStart(2, "0")}
@@ -88,7 +87,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate = undefined }) 
           </span>
           <span className="banner-card max-md:text-xs px-1">SEGUNDOS</span>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
