@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { Button } from "../button/Button";
 import { Countdown } from "../cards/countdown";
 import { ImageWithArrowTitle } from "../cards/imageWithArrowTitle";
@@ -11,6 +12,10 @@ import { SimpleBanner } from "./simpleBanner";
 import { VideoBanner } from "./videoBanner";
 
 export const MainBanner = () => {
+  React.useEffect(() => {
+    window.location.href = "https://www.mobilityexpobraille.com.br/";
+  }, []);
+
   return (
     <div className="flex flex-col text-center justify-center items-center gap-10 py-20">
       <div className="flex flex-col  w-full max-w-[57.5rem] gap-2 justify-center items-center">
